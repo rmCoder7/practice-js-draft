@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- option 1 -->
+   <h3 id="text-chane">Detfault Text</h3>
+   <button onclick="ClicktoChange()">Clcick here</button>
+
+
+<!-- option 2 -->
+<h3 id="textTochange" >Detfault Text but aonther way to changes</h3>
+<button  id="buttonId">clcicked over here</button>
+
+
+
+   <script>
+      function ClicktoChange()
+      {
+    const clickthebutton = document.getElementById("text-chane");
+    // console.log(clickthebutton)
+    clickthebutton.innerText = "The text changed"
+      
+
+      }
+
+
+// option 2
+
+document.getElementById("buttonId").addEventListener("click" , function(){
+
+     const variable = document.getElementById("textTochange");
+     variable.innerText ="I can do that fiex that"
+
+})
+
+   </script>
+
+
+</body>
+</html>

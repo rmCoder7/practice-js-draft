@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <h4 id="heading-txt">You can change this text</h4>
+<input id="input-here"  type="text">
+<button id="button-here">click here to change</button>
+
+<script>
+
+  document.getElementById("button-here").addEventListener("click" , function(){
+
+        const inputSection = document.getElementById("input-here");
+        const inputValue = inputSection.value;
+
+        const p = document.getElementById("heading-txt");
+        p.innerText = inputValue;
+
+
+
+
+  })
+</script>
+
+</body>
+</html>
