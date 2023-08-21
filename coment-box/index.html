@@ -23,7 +23,10 @@ document.getElementById("button-zone").addEventListener("click" , function(){
 
 // add text to paragraph
 
-
+ const txtIdCalling = document.getElementById("text-zone");
+ const NewElemnt = document.createElement('p');
+ NewElemnt.innerText = commentKOri;
+ txtIdCalling.appendChild(NewElemnt);
 
 })
         </script>
